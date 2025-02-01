@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* globals.css */
+@import "ag-grid-community/styles/ag-grid.css";
+@import "ag-grid-community/styles/ag-theme-alpine.css";
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+
+/* Ensure the full height of the page and enable scrolling */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-y: auto; /* Enable vertical scrolling */
+    min-height: 100vh; /* Ensures the body takes at least full height of the viewport */
+    display: flex;
+    flex-direction: column; /* For flexible layout */
+}
+
+/* Main content will fill the remaining height */
+.main-content {
+    flex: 1;
+}
+
+.header {
+    background-color: #222; /* Dark gray */
+    color: white;
+    padding: 15px 30px; /* Adjusted padding */
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info {
+    display: flex;
+    gap: 20px; /* Space between items */
+    color: #ccc;
+}
+
+.contact-info h5 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.contact-info a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    color: #ffcc00; /* Highlight color on hover */
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    color: #ffcc00; /* Highlight color on hover */
+}
+
+.footer {
+    background-color: #222; /* Dark gray */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #ffcc00; /* Highlight color on hover */
+}
+
+.social-link {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+    color: #ffcc00; /* Highlight color on hover */
+}
+
+/* Custom datepicker styles */
+.custom-datepicker {
+    font-family: 'Roboto', sans-serif;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.react-datepicker__day--highlighted {
+    background-color: #ffcc00;
+    color: white;
+}
+
+.react-datepicker__today-button {
+    background-color: #4caf50;
+    color: white;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@media print {
+	body {
+		margin: 0 !important;
+	}
+}
+
+.main-container {
+	font-family: 'Lato';
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ck-content {
+	font-family: 'Lato';
+	line-height: 1.6;
+	word-break: break-word;
+}
+
+.editor-container_classic-editor .editor-container__editor {
+	min-width: 795px;
+	max-width: 795px;
+}
