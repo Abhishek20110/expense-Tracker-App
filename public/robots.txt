@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://expense-tracker-frontend-indol.vercel.app/
+
+# Sitemaps
+Sitemap: https://expense-tracker-frontend-indol.vercel.app/sitemap.xml
